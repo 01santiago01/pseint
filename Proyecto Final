@@ -23,4 +23,52 @@ Segun tirada_pc Hacer
   3:
       Escribir Sin Saltar "PC: TIJERAS- ";
  
+ FinSegun
  
+ FinSubProceso
+ 
+ Subproceso JugarUnaRonda(puntos_j1 Por Referencia, puntos_pc Por Referencia, ronda Por Referencia)
+  //Declaramos variables
+  //PIEDRA ES 1
+  //PAPEL ES 2
+  //TIJERA ES 3
+  Definir tirada_j1, tirada_pc como Entero;
+  ronda = ronda + 1;
+  //Turno del Jugador
+  Escribir "Que quieres jugar?";
+  Escribir "1)Piedra 2)Papel 3)Tijera";
+  Repetir
+   Leer tirada_j1;
+  Hasta Que (tirada_j1=1 O tirada_j1=2 O tirada_j1=3)
+  //Turno del PC
+  tirada_pc=azar(3)+1;
+  //Mostramos la jugada
+  DibujarJugada(tirada_j1, tirada_pc);
+  //Comprobar el resultado
+  //Si empate
+  Si(tirada_pc=tirada_j1) Entonces
+    Escribir "Empate!"  
+    //Si no hay empate uno de los dos ha ganado
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
