@@ -96,8 +96,19 @@ Proceso PiedraPapelTijera
           Escrbir"Has perdido. ", puntos_j1, ' - ',puntos_pc;
       FinSi
       
-      //Preguntaremos si el usuario|
-        
+      //Preguntaremos si el ususuario
+      //quiere volver a jugar
+      Escribir "Quieres Salir?";
+      Escribir "ENTER para salir o 1) Volver a Juagar";
+      Leer respuesta;
+      Si (respuesta<>1) Entonces
+      salir<- VERDADERO
+      
+      FinSi
+      
+   FinMientras
+   
+FinProceso
               
   
 
